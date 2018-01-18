@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -command  "C:\addCreationDateFiles\scriptrename.ps1 -path %1 -format %2"
