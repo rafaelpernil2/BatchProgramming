@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -command  "C:\addCreationDateFiles\scriptrename3.ps1 -path ./ -format *.flac"
