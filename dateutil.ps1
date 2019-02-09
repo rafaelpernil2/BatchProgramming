@@ -5,22 +5,11 @@ Param(
 )
 
 if (!$format.StartsWith("*.")){
-
 	$format = '*.' + $format
-
-}
-
-
-if (($path -eq "")){
-	$path = "./"
 }
 
 
 if ($operation -eq "append"){
-	
-	
-
- 
 	Get-ChildItem -Path $path -Filter $format | ForEach {
 		$DateStr = $_.CreationTime.ToString("yyyy-MM-dd__HH-mm")
 		$newName = "$($_.DirectoryName)\$($DateStr)_$($_.BaseName)$($_.Extension)"
@@ -29,10 +18,8 @@ if ($operation -eq "append"){
 		write-host "$($_.BaseName)" -nonewline -ForegroundColor darkgray 
 		write-host " has been successfully renamed" -ForegroundColor darkgreen 
 	}
-
 }
 ElseIf($operation -eq "fix"){
-
 	$trigger = "0"
 	Get-ChildItem -Path $path -Filter $format | ForEach {
 		$newName = "$($_.BaseName)"
@@ -57,7 +44,6 @@ ElseIf($operation -eq "fix"){
 	else{
 		write-host "All files have been fixed successfully" -ForegroundColor green
 	}
-
 }ElseIf ($operation -eq "remove"){
 	Get-ChildItem -Path $path -Filter $format | ForEach {
 	$newName = "$($_.DirectoryName)\$($_.BaseName)"
@@ -93,7 +79,6 @@ ElseIf($operation -eq "fix"){
 
 
 }ElseIf ($operation -eq "append-old"){
-
 	write-host "WARNING: This method is deprecated"   -ForegroundColor darkred
 	Get-ChildItem -Path $path -Filter $format | ForEach {
 		$DateStrOld = $_.CreationTime.ToString("dd-MM-yyyy__HH-mm")
@@ -104,7 +89,4 @@ ElseIf($operation -eq "fix"){
 		write-host "$($_.BaseName)" -nonewline -ForegroundColor darkgray 
 		write-host " has been successfully renamed" -ForegroundColor darkgreen 
 	}
-
-
-
 }
