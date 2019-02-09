@@ -1,1 +1,0 @@
-Powershell.exe -executionpolicy remotesigned -command  "C:\addCreationDateFiles\scriptfixdate.ps1 -path ./ -format *.flac"
