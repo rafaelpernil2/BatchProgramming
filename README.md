@@ -2,7 +2,7 @@
 Batch scripts for productivity optimization programmed using PowerShell
 
 # DateUtil
-A Powershell script for appending the creation date of your files to their names. Useful for organizing files
+A **Powershell script** for **appending the creation date to the name of each file in a folder**. Useful for organizing files
 ## Operations
 This script contains the following operations, specified through the `operation` argument:
 ### append
@@ -13,7 +13,7 @@ For each file in the specified path, it appends the creation date of each file t
 `yyyy-MM-dd__HH-mm_filename.format`
 
 ### append-old
-It does the same as the above method but with a different format.
+For each file in the specified path, it appends the creation date of each file to its name. The output has a different format than `append`.
 ##### Input:
 `filename.format`
 ##### Output:
