@@ -26,7 +26,7 @@ For each file in the specified path, it swaps the name format from `append-old` 
 ##### Output:
 `yyyy-MM-dd__HH-mm_filename.format`
 ### unfix
-For each file in the specified path, it swaps the name format from `yyyy-MM-dd__HH-mm_filename.format` to 
+For each file in the specified path, it swaps the name format from `append` output format to `append-old`
 ##### Input:
 `yyyy-MM-dd__HH-mm_filename.format`
 ##### Output:
