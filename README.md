@@ -1,37 +1,37 @@
 # BatchProgramming
 Batch scripts for productivity optimization programmed using PowerShell
 
-# DateUtil
+## DateUtil
 A **Powershell script** for **appending the creation date to the name of each file in a folder**. Useful for organizing files
-## Operations
+### Operations
 This script contains the following operations, specified through the `operation` argument:
-### append
+#### append
 For each file in the specified path, it appends the creation date of each file to its name.
 ##### Input:
 `filename.format`
 ##### Output:
 `yyyy-MM-dd__HH-mm_filename.format`
 
-### append-old
+#### append-old
 For each file in the specified path, it appends the creation date of each file to its name. The output has a different format than `append`.
 ##### Input:
 `filename.format`
 ##### Output:
 `filename_yyyy-MM-dd__HH-mm.format`
 
-### fix
+#### fix
 For each file in the specified path, it swaps the name format from `append-old` output format to `append`
 ##### Input:
 `filename_yyyy-MM-dd__HH-mm.format`
 ##### Output:
 `yyyy-MM-dd__HH-mm_filename.format`
-### unfix
+#### unfix
 For each file in the specified path, it swaps the name format from `append` output format to `append-old`
 ##### Input:
 `yyyy-MM-dd__HH-mm_filename.format`
 ##### Output:
 `filename_yyyy-MM-dd__HH-mm.format`
-### remove
+#### remove
 For each file in the specified path, it removes the date from the file name added using the `append` operation
 ##### Input:
 `yyyy-MM-dd__HH-mm_filename.format`
@@ -39,12 +39,12 @@ For each file in the specified path, it removes the date from the file name adde
 `filename.format`
 
 
-## Usage
-### Arguments:
+### Usage
+#### Arguments:
 * `-operation`: Specify what operation to use
 * `-format`: Specify the file extension of the files to modify
 * `-path`: Specify the folder of the files to modify
-### Example:
+#### Example:
 
 
 ```powershell
