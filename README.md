@@ -3,7 +3,7 @@ A repository of batch scripts oriented towards productivity optimization. Progra
 
 ## Table of Contents
 
-- [List of Scripts](#list%20of%20scripts)
+- [List of Scripts](#list-of-scripts)
   - [DateUtil](#dateutil)
 - [Credits](#credits)
 - [License](#license)
