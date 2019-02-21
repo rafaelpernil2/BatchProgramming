@@ -1,1 +1,1 @@
-Powershell.exe -executionpolicy remotesigned -command  ".\dateutil.ps1 -operation %1 -format flac -path ./"
+Powershell.exe -executionpolicy remotesigned -command  ".\dateutil.ps1 -operation %1 -extension flac -path ./"
