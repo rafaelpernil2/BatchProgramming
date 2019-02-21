@@ -19,3 +19,4 @@ For the moment, I don't consider contributions as an option
 All scripts in this repository are developed by myself.
 ## License
 This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+
