@@ -2,6 +2,7 @@
 A repository of batch scripts oriented towards productivity optimization. Programmed using PowerShell, for now.
 
 ## Table of Contents
+
 - [List of Scripts](#list%20of%20scripts)
   - [DateUtil](#dateutil)
 - [Credits](#credits)
